@@ -1,0 +1,14 @@
+# Downloading the latest Miniconda Installer (As per system requirement)
+$ wget https://repo.anaconda.com/miniconda/Miniconda3-py39_4.10.3-Linux-x86_64.sh
+
+# Installation
+$ sh ./Miniconda3-py39_4.10.3-Linux-x86_64.sh 
+$ conda update conda
+
+# Creating Environment in Conda
+$ conda create -n jupyter -c bioconda python=3.9
+$ conda activate jupyter
+
+# installing and running jupyter-lab
+$ pip install jupyterlab
+$ jupyter-lab
